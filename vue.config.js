@@ -15,6 +15,14 @@ process.env.VUE_APP_UPDATE_TIME = dayjs().locale('zh-cn').format('YYYY-MM-DD')
 
 module.exports = defineConfig({
   publicPath: '',
+  lintOnSave: false,
+  devServer: {
+    // 指定开发服务器的主机名，默认为 localhost
+    port: 8080,
+    allowedHosts: "all",
+    https: false,
+    hot:false
+  },
   chainWebpack(config) {
     config.resolve.alias
       .set('api', resolve('src/api'))

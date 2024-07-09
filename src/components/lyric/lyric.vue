@@ -10,15 +10,6 @@
         <dd>歌手名：{{ currentMusic.singer }}</dd>
         <dd>专辑名：{{ currentMusic.album }}</dd>
       </template>
-      <template v-else>
-        <dd>mmPlayer在线音乐播放器</dd>
-        <dd>
-          <a class="hover" target="_blank" href="https://github.com/maomao1996">
-            <mm-icon type="github" :size="14" />
-            &nbsp;茂茂
-          </a>
-        </dd>
-      </template>
     </dl>
     <!--歌词-->
     <div ref="musicLyric" class="music-lyric">
@@ -149,7 +140,7 @@ export default {
   .music-lyric-items {
     text-align: center;
     line-height: 34px;
-    font-size: @font_size_small;
+    font-size: @font_size_large;
     transform: translate3d(0, 0, 0);
     transition: transform 0.6s ease-out;
     .no-wrap();

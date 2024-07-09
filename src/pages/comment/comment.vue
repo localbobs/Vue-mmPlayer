@@ -171,8 +171,8 @@ export default {
     height: 34px;
     line-height: 34px;
     color: @text_color_active;
-    background: @header_bg_color;
-    backdrop-filter: @backdrop_filter;
+    // background: @header_bg_color;
+    // backdrop-filter: @backdrop_filter;
   }
   .comment-item {
     position: relative;

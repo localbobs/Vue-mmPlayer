@@ -29,7 +29,7 @@
             {{ currentMusic.name }}
             <span>- {{ currentMusic.singer }}</span>
           </template>
-          <template v-else>欢迎使用mmPlayer在线音乐播放器</template>
+          <!-- <template v-else>欢迎使用mmPlayer在线音乐播放器</template> -->
         </div>
         <div v-if="currentMusic.id" class="music-bar-time">
           {{ currentTime | format }}/{{ currentMusic.duration % 3600 | format }}
@@ -435,12 +435,14 @@ export default {
       align-items: center;
       width: 180px;
       .control-play {
+   
         .flex-center;
         border-radius: 50%;
         width: 40px;
         height: 40px;
         color: #fff;
         background-color: rgba(255, 255, 255, 0.3);
+      
       }
     }
 

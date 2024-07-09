@@ -2,9 +2,9 @@
   <!--头部-->
   <header class="mm-header">
     <h1 class="header">
-      <a href="https://github.com/maomao1996/Vue-mmPlayer" target="_blank">
-        mmPlayer 在线音乐播放器
-      </a>
+      <div>
+        在线音乐播放器
+      </div>
       <img
         v-if="visitorBadge"
         :src="visitorBadge"
@@ -162,7 +162,7 @@ export default {
   width: 100%;
   height: 60px;
   @media (max-width: 768px) {
-    background: @header_bg_color;
+    // background: @header_bg_color;
   }
   .header {
     .flex-center;
